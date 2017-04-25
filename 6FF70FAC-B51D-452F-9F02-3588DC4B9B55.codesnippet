@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>HHButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //／按钮
+    private lazy var nextStepBtn: UIButton = {
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "login_btn_grayred_345x44"), for: .normal)
+        
+        button.setTitle("下一步", for: UIControlState.normal)
+        button.titleLabel?.font = UIFontSize(size: 18*UIRate)
+        button.addTarget(self, action: #selector(nextStepBtnAction), for: .touchUpInside)
+        return button
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6FF70FAC-B51D-452F-9F02-3588DC4B9B55</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>按钮</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>HHButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

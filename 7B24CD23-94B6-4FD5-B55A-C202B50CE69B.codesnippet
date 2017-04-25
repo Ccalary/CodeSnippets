@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>HHDividerLine</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //分割线
+    private lazy var divideLine1: UIView = {
+        let lineView = UIView()
+        lineView.backgroundColor = defaultDivideLineColor
+        return lineView
+    }()
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7B24CD23-94B6-4FD5-B55A-C202B50CE69B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>分割线</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DividerLine</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

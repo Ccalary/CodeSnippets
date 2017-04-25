@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>HHMakeSnp</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#T##hex: String##String#&gt;.snp.makeConstraints { (make) in
+            make.width.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+            make.height.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+            make.centerX.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+            make.centerY.equalTo(&lt;#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#&gt;)
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7893802F-F23F-438B-9AB0-D1666CB37465</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>布局</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SnapKit</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

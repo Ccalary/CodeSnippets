@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>HHTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> 
+private let cellID = "cellID"
+private lazy var aTableView: UITableView = {
+        
+        let tableView = UITableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: cellID)
+        
+        
+        //tableView 单元格分割线的显示
+        if tableView.responds(to:#selector(setter: UITableViewCell.separatorInset)) {
+            tableView.separatorInset = .zero
+        }
+        
+        if tableView.responds(to: #selector(setter: UITableViewCell.layoutMargins)) {
+            tableView.layoutMargins = .zero
+        }
+        return tableView
+        
+    }()
+   //MARK: - UITableView Delegate&amp;&amp;DataSource
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! HomeTableViewCell
+        //去除选择效果
+        cell.selectionStyle = .none
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+        return 80*UIRate
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+    
+    }
+    
+    //设置分割线
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if cell.responds(to: #selector(setter: UITableViewCell.separatorInset)) {
+            cell.separatorInset = .zero
+        }
+        if cell.responds(to: #selector(setter: UITableViewCell.layoutMargins)) {
+            cell.layoutMargins = .zero
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>47ED9EE6-80EA-4EA4-A9C9-2744D4AE98AA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tableView各种代理</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
